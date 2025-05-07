@@ -13,7 +13,7 @@ import java.sql.SQLException;
  * @author DELL 5590
  */
 public class ConexionBD {
-  private static final String URL = "jdbc:mysql://localhost:3306/ferreteria_bd?useSSL=false";
+  private static final String URL = "jdbc:mysql://localhost:3306/Gestionmatriculas?useSSL=false";
 private static final String USER = "root"; // Cambia por tu usuario
 private static final String PASSWORD = "123456789"; // Cambia por tu contraseña
 
@@ -30,7 +30,7 @@ public static Connection getConnection() throws SQLException {
 public static void main(String[] args) {
     try {
         Connection c = getConnection();
-        System.out.println("Conexión exitosa a ferreteria_bd");
+        System.out.println("Conexión exitosa a Gestionmatriculas");
         c.close();
     } catch (SQLException e) {
         System.err.println("Error de conexión: " + e.getMessage());
